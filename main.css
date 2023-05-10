@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding-bottom: 32px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  color: #FFF;
+  background-color: rgb(88, 88, 247);
+}
+
+header .container {
+  color: #FFF;
+  background-color: rgb(88, 88, 247);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+header li {
+  display: inline;
+  margin-left: 8px;
+  list-style: none;
+}
+
+.sobre {
+  display: flex;
+  padding-top: 32px;
+}
+
+.sobre img {
+  width: 35%;
+  margin-right: 48px;
+}
+
+.sobre__texto h2 {
+  color: rgb(88, 88, 247);
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(88, 88, 247);
+  margin-bottom: 32px;
+}
+
+.produtos {
+  width: 100%;
+}
+
+.produtos>h2 {
+  margin-top: 48px;
+  color: rgb(88, 88, 247);
+  border-bottom: 2px solid rgb(88, 88, 247);
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+}
+
+.produtos .articles {
+  display: flex;
+  gap: 2%;
+}
+
+.produtos article {
+  width: calc(98% / 3);
+}
+
+.produtos img {
+  width: 100%;
+}
+
+.produtos article h3 {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  margin: 8px 0;
+}
+
+.produtos button {
+  background-color: rgb(88, 88, 247);
+  color: #FFF;
+  border: none;
+  padding: 8px;
+  border-radius: 2px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+
+  header .container li {
+    display: block;
+  }
+
+  .header-nav-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sobre {
+    display: block;
+    padding-top: 32px;
+    margin-bottom: 64px;
+  }
+
+  .sobre img {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .produtos .articles {
+    display: block;
+    gap: 2%;
+  }
+
+  .produtos article {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .produtos img {
+    width: 100%;
+  }
+
+  .produtos article h3 {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 8px 0;
+  }
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px) {
+  .container {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+
+  header .container li {
+    display: inline;
+  }
+
+  .sobre {
+    display: block;
+    padding-top: 32px;
+    margin-bottom: 64px;
+  }
+
+  .sobre img {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .produtos .articles {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2%;
+  }
+
+  .produtos article {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  .produtos img {
+    width: 100%;
+  }
+
+  .produtos article h3 {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 8px 0;
+  }
+}
